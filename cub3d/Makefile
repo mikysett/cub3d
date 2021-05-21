@@ -6,13 +6,13 @@
 #    By: msessa <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/23 11:32:44 by msessa            #+#    #+#              #
-#    Updated: 2021/05/14 15:40:20 by msessa           ###   ########.fr        #
+#    Updated: 2021/05/21 21:27:10 by msessa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	cub3D
 
-LIBFT	=	libft
+LIBFT	=	libft/libft
 
 HEADERS	=	headers
 
@@ -98,11 +98,11 @@ CFLAGS	=	-O3 -Wall -Wextra -Werror
 # LIBS	=	-lm -L./libft -lft -lmlx -lX11 -lbsd -lXext
 
 # Mac Libs
-LIBS	=	-lm -L./libft -lft -lmlx -framework OpenGL -framework AppKit
+LIBS	=	-lm -L./$(LIBFT) -lft -lmlx -framework OpenGL -framework AppKit
 
 RM		=	rm -f
 
-INCLUDES	= -I/libft/ -I/headers/
+INCLUDES	= -I/$(LIBFT)/ -I/headers/
 
 $(DIR_O)/%.o: %.c
 			@mkdir -p $(DIR_O)

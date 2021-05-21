@@ -1,0 +1,3 @@
+[submodule "cub3d/libft"]
+	path = cub3d/libft
+	url = git@github.com:mikysett/libft.git

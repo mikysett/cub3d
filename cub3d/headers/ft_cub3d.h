@@ -23,7 +23,7 @@
 # include <stdint.h>
 # include <sys/time.h>
 # include <mlx.h>
-# include "../libft/libft.h"
+# include "../libft/libft/libft.h"
 # include "ft_constants.h"
 # include "ft_types.h"
 # include "ft_errors.h"
