@@ -1,5 +1,7 @@
 # Cub3D - 42Lisbon
 
+To clone with submodules: `git clone --recursive <project url>`
+
 Use `make` or `make bonus` for the improved version.
 
 * `m`: toggle minimap
